@@ -19,3 +19,22 @@
 - Socket IO
 - PeerJs
 - uuid()
+
+## Development
+
+- Set peer PORT(script.js) == PORT(server.js)
+
+```js
+npm install
+npm start
+```
+
+## Deployment
+
+- Set peer PORT in script.js = 443
+- Set peer PORT in server.js = process.env.
+  Add Procfile:
+
+```js
+web: node server.js
+```
