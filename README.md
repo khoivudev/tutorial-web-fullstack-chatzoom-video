@@ -3,6 +3,7 @@
 - Initialize NodeJs Project !
 - Initialize our first view!
 - Create a room id !
+- Share link to join room
 - Add the ability to view our own video !
 - Add ability to allow others to stream their video
 - Add styling
