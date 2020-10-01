@@ -1,3 +1,4 @@
+require("dotenv/config");
 const { v4: uuidv4 } = require("uuid");
 const express = require("express");
 const app = express();
@@ -31,6 +32,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(443, () => {
-  console.log("Server is running at port 3000");
+PORT = process.env.PORT || 3000;
+
+server.listen(PORT, () => {
+  console.log(`Server is running at port ${PORT}`);
 });
